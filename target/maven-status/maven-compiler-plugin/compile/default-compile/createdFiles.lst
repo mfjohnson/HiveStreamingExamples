@@ -1,0 +1,5 @@
+TestMySQLConnection.class
+MajorCompactWhileStreaming.class
+NonSecureHiveStreaming.class
+HiveStreamWriteThread.class
+WriteHDFS.class
