@@ -42,9 +42,9 @@ public class HiveStreamWriteThread extends Thread {
 
         try {
             Date startDate = new Date();
-            writer = new DelimitedInputWriter(columnFields, ",", endPt);
             connection = endPt.newConnection(false);
-
+            writer = new DelimitedInputWriter(columnFields, ",", endPt);
+            
             int currentBatchSize = maxBatchSize;
 
             TransactionBatch txnBatch = connection.fetchTransactionBatch(maxBatchGroups, writer);
